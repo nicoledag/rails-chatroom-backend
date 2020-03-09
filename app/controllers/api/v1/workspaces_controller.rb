@@ -1,2 +1,2 @@
-class WorkspacesController < ApplicationController
+class API::V1::WorkspacesController < ApplicationController
 end

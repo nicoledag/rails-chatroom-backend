@@ -1,2 +1,2 @@
-class RepliesController < ApplicationController
+class API::V1::RepliesController < ApplicationController
 end
