@@ -2,7 +2,7 @@ class API::V1::MessagesController < ApplicationController
 
     def index
         @messages = Message.all
-        messages_json = MessageSerializer.new(@message).serialized_json
+        messages_json = MessageSerializer.new(@messages).serialized_json
         render json: messages_json
     end
 
