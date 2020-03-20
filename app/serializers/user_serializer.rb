@@ -3,7 +3,7 @@ class UserSerializer
 
     attributes :id, :username, :email, :password_digest
 
-    # has_many :messages, serializer: MessageSerializer
+    has_many :messages, serializer: MessageSerializer
     # has_many :replies, serializer: ReplySerializer
 
 end
