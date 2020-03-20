@@ -1,4 +1,4 @@
-class RepliesSerializer
+class ReplySerializer
     include FastJsonapi::ObjectSerializer
 
     attributes :id, :text, :user_id, :message_id
