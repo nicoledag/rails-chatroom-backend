@@ -10,7 +10,12 @@ Rails.application.routes.draw do
       resources :replies
       resources :messages
       resources :users
+
+      resources :messages do 
+        resourses :replies
     end
+
+
   end
  
   
