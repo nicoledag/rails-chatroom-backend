@@ -11,6 +11,11 @@ class API::V1::SessionsController < ApplicationController
 
     private
 
+    def set_session
+        session[:user_id] = @user.id
+    end
+
+    
 
 
 end
