@@ -7,16 +7,13 @@ Rails.application.routes.draw do
 
   namespace :api do
     namespace :v1 do 
-      resources :replies
-      resources :messages
-      resources :users
+      resources :users, :replies, :messages
 
       resources :messages do 
-        resourses :replies
+        resources :replies
+      end
     end
-
-
-  end
+ end
  
   
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
